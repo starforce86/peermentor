@@ -1,0 +1,8 @@
+rootProject.name = 'peermentor'
+
+include ':app'
+include ':RNMaterialKit'
+project(':RNMaterialKit').projectDir = file('../node_modules/react-native-material-kit/android')
+
+include ':com.lwansbrough.ReactCamera'
+project(':com.lwansbrough.ReactCamera').projectDir = new File(settingsDir, '../node_modules/react-native-camera/android')
